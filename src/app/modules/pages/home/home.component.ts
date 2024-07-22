@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor(
     private pageService: PageService
   ) {
-    this.pageService.setHeaderPage(new HeaderObj('Bienvenido', '/', false))
+    this.pageService.setHeaderPage(new HeaderObj('LDS Chequeo y validación', '/', false))
   }
 
   ngOnInit(): void {

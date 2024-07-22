@@ -20,7 +20,7 @@ registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -29,7 +29,7 @@ registerLocaleData(localeEs);
     HttpClientModule,
     NgxSpinnerModule,
     ToastrModule.forRoot(),
-    MaterialModule
+    MaterialModule,
   ],
   providers: [
     { provide: MAT_DATE_LOCALE, useValue: 'es-CO' },

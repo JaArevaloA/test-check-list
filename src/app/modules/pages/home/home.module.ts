@@ -8,18 +8,23 @@ import { MaterialModule } from '../../shared/material.module';
 
 // Components
 import { ConfirmationModal } from "../../core/modals/confirmation/confirmation.modal";
+import { ListasComponent } from '../listas/listas.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    ConfirmationModal
+    ConfirmationModal,
+    ListasComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     MaterialModule,
-    NgSelectModule
+    NgSelectModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class HomeModule { }

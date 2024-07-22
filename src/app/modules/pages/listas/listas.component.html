@@ -1,0 +1,15 @@
+<mat-form-field appearance="outline" class="w-100-p">
+    <mat-label>Frameworks / Lenguajes</mat-label>
+    <mat-select [(value)]="framework">
+        <mat-option></mat-option>
+        <mat-option [value]="option" *ngFor="let option of frameworksList">{{ option }}</mat-option>
+    </mat-select>
+</mat-form-field>
+
+
+<div class="container">
+    <div class="botones">
+        <button class="espacios" mat-raised-button color="primary" (click)="crearLista()">Crear lista</button>
+        <button class="espacios" mat-raised-button color="warn" (click)="eliminar()">Eliminar</button>
+    </div>
+</div>
